@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name" translatable="false">TP3</string>
+    <string name="action_settings" translatable="false">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label" translatable="false">First Fragment</string>
+    <string name="second_fragment_label" translatable="false">Second Fragment</string>
+    <string name="next" translatable="false">Next</string>
+    <string name="previous" translatable="false">Previous</string>
+
+    <string name="lorem_ipsum" translatable="false">
+       lorem ekknsdjksd
+        jdsdjjzd
+    </string>
+    <string name="connexion">connexion</string>
+    <string name="username">Login</string>
+    <string name="password">mot de passe</string>
+    <string name="sign_in">Sign in</string>
+</resources>
