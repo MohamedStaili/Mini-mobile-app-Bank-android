@@ -12,6 +12,8 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
+import com.bumptech.glide.Glide;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -39,8 +41,11 @@ private Context context ;
         title.setText(transaction.getTitle());
         price.setText(transaction.getPrice() + " MAD");
         date.setText(transaction.getDate().toString());
-        image.setImageResource(R.drawable.ic_launcher_background);
-
+        //image.setImageResource(transaction.getImageId());
+        Glide.with(context)
+                .load(transaction.getImageId())
+                .placeholder(R.drawable.ic_launcher_background)
+                .into(image);
 
         return convertView;
     }

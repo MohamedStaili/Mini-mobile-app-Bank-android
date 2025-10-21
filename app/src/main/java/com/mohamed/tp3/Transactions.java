@@ -12,7 +12,7 @@ import com.mohamed.tp3.databinding.ActivityTransactionsBinding;
 
 import java.util.ArrayList;
 import java.util.Date;
-
+import com.bumptech.glide.Glide;
 public class Transactions extends AppCompatActivity {
 
     private AppBarConfiguration appBarConfiguration;
@@ -28,12 +28,12 @@ public class Transactions extends AppCompatActivity {
         listView = binding.transationList ;
         transactions = new ArrayList<>();
 
-        transactions.add(new Transaction(R.drawable.ic_launcher_background, "Achat Supermarché", 230.50, new Date()));
-        transactions.add(new Transaction(R.drawable.ic_launcher_background, "Restauration", 75.00, new Date()));
-        transactions.add(new Transaction(R.drawable.ic_launcher_background, "Transport Bus", 10.00, new Date()));
-        transactions.add(new Transaction(R.drawable.ic_launcher_background, "Facture Téléphone", 120.99, new Date()));
-        transactions.add(new Transaction(R.drawable.ic_launcher_background, "Retrait DAB", 500.00, new Date()));
-        transactions.add(new Transaction(R.drawable.ic_launcher_background, "Cadeau Ami", 200.00, new Date()));
+        transactions.add(new Transaction(R.drawable.super_market, "Achat Supermarché", 230.50, new Date()));
+        transactions.add(new Transaction(R.drawable.restaurant, "Restauration", 75.00, new Date()));
+        transactions.add(new Transaction(R.drawable.bus, "Transport Bus", 10.00, new Date()));
+        transactions.add(new Transaction(R.drawable.phone, "Facture Téléphone", 120.99, new Date()));
+        transactions.add(new Transaction(R.drawable.bank, "Retrait DAB", 500.00, new Date()));
+        transactions.add(new Transaction(R.drawable.gift, "Cadeau Ami", 200.00, new Date()));
 
         TransactionAdapter adapter = new TransactionAdapter(this, R.layout.list_item, transactions);
         listView.setAdapter(adapter);
